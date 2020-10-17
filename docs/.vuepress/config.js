@@ -8,7 +8,7 @@ module.exports = {
       { text: 'COB site', link: 'https://chiefonboarding.com' }
     ],
     sidebar: [
-      { path: '/Introduction', title: 'Introduction' },
+      { path: '/', title: 'Introduction' },
       { path: '/Deployment', title: 'Deployment' },
       { path: '/Development', title: 'Development' },
       {
