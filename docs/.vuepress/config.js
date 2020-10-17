@@ -1,7 +1,7 @@
 module.exports = {
   title: 'ChiefOnboarding - Documentation',
   description: 'Documentation for ChiefOnboarding',
-  base: 'https://docs.chiefonboarding.com',
+  base: '/',
   themeConfig: {
     nav: [
       { text: 'Github', link: 'https://github.com/chiefonboarding' },
