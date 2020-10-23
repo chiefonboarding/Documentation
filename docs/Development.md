@@ -1,6 +1,6 @@
 # Developing on ChiefOnboarding
 
-If you want to contribute or just play around with the source code, clone this repo on your computer and then run this to get it running with Docker:
+If you want to contribute or just play around with the source code, the first step would be to download the source code. Up next, you will have to set up the configutation file. There is an example file in `back/back`. Change the name of that file (`.env.example`) to `.env`. Then run this to get it up and running:
 
 ```
 docker-compose up
