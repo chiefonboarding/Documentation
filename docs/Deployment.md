@@ -6,7 +6,7 @@ Point your domain name to your IP address and then run this on your server:
 
 ```
 git clone https://github.com/chiefonboarding/chiefonboarding
-cd ChiefOnboarding
+cd chiefonboarding
 chmod +x server_script.sh ssl_renew.sh
 # Replace YOURDOMAIN with your domain. example: onboarding.yourcompany.com and EMAIL with your email address. 
 sudo ./server_script.sh YOURDOMAIN EMAIL
