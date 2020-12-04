@@ -23,6 +23,7 @@ module.exports = {
           '/integrations/Email'
         ]
       },
+      { path: '/API', title: 'API' },
       { path: '/Q&A', title: 'Q&A' }
     ]
   }
