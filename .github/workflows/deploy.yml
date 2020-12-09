@@ -16,6 +16,9 @@ jobs:
           echo 'docs.chiefonboarding.com' > CNAME
       - name: Initiate and push new repo
         run: |
+          git config --global user.name GDay
+          git config --global user.email 1939656+GDay@users.noreply.github.com
+
           git init
           git add -A
           git commit -m 'deploy'
