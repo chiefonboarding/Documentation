@@ -20,5 +20,5 @@ jobs:
           git init
           git add -A
           git commit -m 'deploy'
-          git remote add git@github.com:chiefonboarding/Documentation.git
+          git remote add master git@github.com:chiefonboarding/Documentation.git
           git push master:gh-pages
