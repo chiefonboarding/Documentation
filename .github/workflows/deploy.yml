@@ -10,16 +10,15 @@ jobs:
         run: |
           npm install -D vuepress
           npm run docs:build
-      - name: Misc
+      - name: Initiate and push new repo
         run: |
           cd docs/.vuepress/dist
           echo 'docs.chiefonboarding.com' > CNAME
-      - name: Initiate and push new repo
-        run: |
           git config --global user.name GDay
           git config --global user.email 1939656+GDay@users.noreply.github.com
 
           git init
           git add -A
           git commit -m 'deploy'
-          git push -f git@github.com:chiefonboarding/Documentation.git master:gh-pages
+          git remote add git@github.com:chiefonboarding/Documentation.git
+          git push -f master:gh-pages
