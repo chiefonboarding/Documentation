@@ -7,7 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Building
-        run: npm run docs:build
+        run: |
+          npm install -D vuepress
+          npm run docs:build
       - name: Misc
         run: |
           cd docs/.vuepress/dist
