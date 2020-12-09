@@ -5,16 +5,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Building
-      run: npm run docs:build
-    - name: Misc
-      run: |
-        cd docs/.vuepress/dist
-        echo 'docs.chiefonboarding.com' > CNAME
-    - name: Initiate and push new repo
-      uses: actions/checkout@v1
-      run: |
-        git init
-        git add -A
-        git commit -m 'deploy'
-        git push -f git@github.com:chiefonboarding/Documentation.git master:gh-pages
+      - uses: actions/checkout@v2
+      - name: Building
+        run: npm run docs:build
+      - name: Misc
+        run: |
+          cd docs/.vuepress/dist
+          echo 'docs.chiefonboarding.com' > CNAME
+      - name: Initiate and push new repo
+        run: |
+          git init
+          git add -A
+          git commit -m 'deploy'
+          git push -f git@github.com:chiefonboarding/Documentation.git master:gh-pages
