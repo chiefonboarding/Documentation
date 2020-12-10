@@ -2,6 +2,9 @@ module.exports = {
   title: 'ChiefOnboarding - Documentation',
   description: 'Documentation for ChiefOnboarding',
   base: '/',
+  head: [
+     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }]
+  ],
   themeConfig: {
     nav: [
       { text: 'Github', link: 'https://github.com/chiefonboarding' },
