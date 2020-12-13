@@ -1,6 +1,6 @@
 # Deploy ChiefOnboarding through Docker
 
-You can easily deploy ChiefOnboarding through Docker (Docker-compose). Make sure that both Docker and Docker-compose are installed.
+You can easily deploy ChiefOnboarding through Docker (Docker-compose). Make sure that both Docker and Docker-compose are installed and your server needs at least 2GB of RAM. If you have less than 2GB of RAM, it will likely fail at compiling the JavaScript code!
 
 Point your domain name to your IP address and then run this on your server:
 
