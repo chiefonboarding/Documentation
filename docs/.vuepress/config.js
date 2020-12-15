@@ -18,12 +18,13 @@ module.exports = {
         title: 'Integrations',
         collapsable: false,
         children: [
-          '/integrations/Slack',
-          '/integrations/Google',
+          '/integrations/Email',
           '/integrations/S3',
           '/integrations/Twilio',
           '/integrations/Sentry',
-          '/integrations/Email'
+          '/integrations/Slack',
+          '/integrations/Google',
+          '/integrations/Asana'
         ]
       },
       { path: '/API', title: 'API' },
