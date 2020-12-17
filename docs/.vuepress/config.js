@@ -12,6 +12,7 @@ module.exports = {
     ],
     sidebar: [
       { path: '/', title: 'Introduction' },
+      { path: '/Howto', title: 'How To / Demo' },
       { path: '/Deployment', title: 'Deployment' },
       { path: '/Development', title: 'Development' },
       {
