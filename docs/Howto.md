@@ -55,8 +55,15 @@ To do items look like this (for you):
 
 Let's break it down a bit more. 
 
-I think the **title** speaks for itself: it will be displayed to the new hire with that. The **Due on workday** field will allow you to add a workday on when the tasks needs to be be completed. New hire's will get a notification of that in Slack/Webportal. Remember: this is workdays, not calendar days. If Monday is day 1, then next week Monday is day 6!
-Then we have the **Tags** part. This is just a means of identification for yourself and other staff members. Totally optionally, but just something for you to separate tasks that have the same name. New hires will never get to see the tags. The **content** is basically a WYSIWYG editor that allows you to add various things. Such as headers, lists, files and images. **Form options** is exactly the same as with the pre-boarding part. Just a form that your new hires would need to fill in and then it's sent back to you. At the very bottom, you have a quick check box (only available with Slack integration), which is currently checked. This means that the answers from the new hire will be sent back to the Slack channel that you specify there. It's best to make the new hire aware of this, so they don't add anything they wouldn't want to share with the rest of the team. This feature is perfect for when you want to let your new hire introduce to the team with a default format. 
+I think the **title** speaks for itself: it will be displayed to the new hire with that. 
+
+The **Due on workday** field will allow you to add a workday on when the tasks needs to be be completed. New hire's will get a notification of that in Slack/Webportal. Remember: this is workdays, not calendar days. If Monday is day 1, then next week Monday is day 6!
+
+Then we have the **Tags** part. This is just a means of identification for yourself and other staff members. Totally optionally, but just something for you to separate tasks that have the same name. New hires will never get to see the tags. 
+
+The **content** is basically a WYSIWYG editor that allows you to add various things. Such as headers, lists, files and images. 
+
+**Form options** is exactly the same as with the pre-boarding part. Just a form that your new hires would need to fill in and then it's sent back to you. At the very bottom, you have a quick check box (only available with Slack integration), which is currently checked. This means that the answers from the new hire will be sent back to the Slack channel that you specify there. It's best to make the new hire aware of this, so they don't add anything they wouldn't want to share with the rest of the team. This feature is perfect for when you want to let your new hire introduce to the team with a default format. 
 
 
 ### Resource items
@@ -171,7 +178,7 @@ Let's look at each form field:
 Once created, you can choose to send the new hire's preboarding email. This one is not send automatically, as you might want to make changes before you send it (this will be implemented as part of the sequences later on though).
 
 #### Using the API
-Please go to the [API doc page](/API) for instructions on how to set this up.
+Please go to the [API doc page](/API.html#api-documentation) for instructions on how to set this up.
 
 #### Automatically adding new hires when they join Slack (with or without manual approval)
 In the settings, there is now the option to enable 'automatic new hire creation from people joining Slack'. When a new hire joins Slack, ChiefOnboarding will get notified and it will automatically create a new hire account for them. It will also assign one or more default sequences to the new hire. No manual action is needed here - everything is automated.
@@ -181,5 +188,45 @@ Optionally, you can also enable another setting that sends you a message to manu
 ![new new hire](/automated-new-hires.png)
 
 If you click on 'Yeah!', then you will get a popup where you can choose the sequences you want to assign to them.
+
+## New hire's web portal
+
+
+
+
+## New hire's Slack bot
+You can customize the bot however you like. Use your own name for it and profile picture. Please ignore the names/images f 
+
+When a new person is added, the bot will send a message to the team letting them know someone is starting soon.
+![introduction new hire](/introduction-new-hire.png)
+
+They will be able to leave a personalized message for the new hire. This will show up on their 
+
+![new new hire](/slack-welcome-message.png)
+
+This is the first welcome message that is being sent to your new hire when we found the new hire in your slack team (we check every 15 minutes if there are new people in Slack, so it could take up to 15 minutes to find your new hire). You can customize this message of course to anything you like. The buttons are also optional. Along with the message, it adds the to do items that are due for that day. These are mainly to do items that are added under the 'unconditioned block' (see sequences above). Items that are added later, will be send to the new hire around 8am in the morning. The new hire will be notified for new to do items and to do items that are due (or even overdue). 
+
+![slack daily reminder](/slack-daily-reminder.png)
+
+Forms work within Slack as well, with the exception of upload fields. When you use an upload field, we will redirect the new hire to the website to complete this (they don't have to login for this). 
+
+![todo form slack](/todo-form-slack.png)
+
+Courses will look like this:
+
+![slack course](/slack-course.png)
+
+They can't skip through lessons, they will have to complete them one by one, before it's marked as done. Once a course is done, it will turn into a resource, so new hires can look through them even after they completed it.
+
+Resources look like this:
+
+![slack resource](/slack-resource.png)
+
+As you can see there, they can pick any chapter they want.
+
+An introduction in Slack will look like this:
+
+![introduction](/introduction-slack.png)
+
 
 
