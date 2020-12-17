@@ -49,7 +49,49 @@ You can only add one of these and you can add things in here that are automatica
 So what could we put in these blocks? We have created a few different types of templates that you could add in these. You could create those templates before you start to create the sequence, but you can also just add items as you go. 
 
 ### To do items
-To do items look like this:
+To do items look like this (for you):
+
+![todo edit](/todo.png)
+
+Let's break it down a bit more. 
+
+I think the *title* speaks for itself: it will be displayed to the new hire with that. The *Due on workday* field will allow you to add a workday on when the tasks needs to be be completed. New hire's will get a notification of that in Slack/Webportal. Remember: this is workdays, not calendar days. If Monday is day 1, then next week Monday is day 6!
+Then we have the *Tags* part. This is just a means of identification for yourself and other staff members. Totally optionally, but just something for you to separate tasks that have the same name. New hires will never get to see the tags. The *content* is basically a WYSIWYG editor that allows you to add various things. Such as headers, lists, files and images. *Form options* is exactly the same as with the pre-boarding part. Just a form that your new hires would need to fill in and then it's sent back to you. At the very bottom, you have a quick check box (only available with Slack integration), which is currently checked. This means that the answers from the new hire will be sent back to the Slack channel that you specify there. It's best to make the new hire aware of this, so they don't add anything they wouldn't want to share with the rest of the team. This feature is perfect for when you want to let your new hire introduce to the team with a default format. 
+
+
+## Resource items
+Resource items are meant to inform your new hire. Think of general procedures, how to use specific tools etc. Resources look like this (for you):
+
+![resources edit](/resources-edit.png)
+
+We already covered the title, tags and content part - they are the same as with the todo/preboarding items. Something new here is the 'Chapters' part. The name already gives it away, you can create chapters in these resources. This comes in handy when you want to split information a bit more (in the event that headers aren't enough). By default, you can't really check if the new hire indeed read/understood what was in the chapter. To solve that, you could turn the resource into a course (see the switch 'This is a course'). If you enable that, your new hire you will have to go through the resource chapter by chapter. You could also add questions inbetween the chapters, so you can check their knowledge. You will be able to see the answer that they filled in on your side. The chapter with a questionmark icon before it are these test. They can only consist of multiple choice questions.
+You can also pick or create a category to separate the multiple resources for your new hire.
+
+## Introduction items
+Your new hire is new to the company and they barely know anyone. Perhaps they know a few people through the interviews, but that's mostlikely it. Introduction items are items that introduce your colleagues to your new hire. They look like this for you:
+
+
+![introduction edit](/intro-edit.png)
+
+On the right side, you have an example of how it looks like to your new hire (in the webportal). Please note that things like `{{ first_name }}` will be replaced with the new hire's first name. This goes for most fields in the software (including content and title items). You can use these placeholders:
+
+`{{ first_name }}`: new hire's first name
+`{{ last_name }}`: new hire's last name
+`{{ email }}`: new hire's email address
+`{{ position }}`: new hire's position
+`{{ buddy }}`: new hire's buddy's full name
+`{{ manager }}`: new hire's manager's full name
+
+
+## Badge items
+Badges are a way to keep your new hire motivated. You can't really do much with a badge, it's just there to give your new hire that extra bit of positivity between going through all the boring tasks they need to complete.
+
+![badge edit](/badge-edit.png)
+
+On the right side, you will see an example of how it looks for the new hire. This, again, is for the webportal, but can be used for Slack as well. 
+
+## 
+
 
 
 
