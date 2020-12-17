@@ -35,7 +35,7 @@ You might have noticed the litle part at the bottom that says "Form options". Yo
 ### The general blocks
 There are three types of general blocks that you can choose from. You can create a block that triggers before the new hire starts. You could use this to create tasks (we will get to this later) for colleagues for things they need to do or send some emails/slack/text messages. 
 
-The second type of general blocks are the ones that start after the new hire starts. These are marked in workdays, so it doesn't really matter if your new hire starts on a Monday or Thursday - ChiefOnboarding will skip the weekends and not bother the new hire on those days. Example: Monday is workday 1, next week Monday is then day 6. You can add a bunch more in these types of blocks (which we will get into in a bit).
+The second type of general blocks are the ones that start after the new hire starts. These are marked in workdays, so it doesn't really matter if your new hire starts on a Monday or Thursday - ChiefOnboarding will skip the weekends and not bother the new hire on those days. Example: Monday is workday 1, next week Monday is then day 6. You can add a bunch more in these types of blocks (which we will get into in a bit). We will notify the new hire of any newly added things - you can disable this if you don't want that.
 
 All of the above blocks trigger at 8 AM in the new hire's timezone. Yes, ChiefOnboarding is totally remote friendly, we support multiple timezones and multiple languages. 
 
@@ -55,8 +55,8 @@ To do items look like this (for you):
 
 Let's break it down a bit more. 
 
-I think the *title* speaks for itself: it will be displayed to the new hire with that. The *Due on workday* field will allow you to add a workday on when the tasks needs to be be completed. New hire's will get a notification of that in Slack/Webportal. Remember: this is workdays, not calendar days. If Monday is day 1, then next week Monday is day 6!
-Then we have the *Tags* part. This is just a means of identification for yourself and other staff members. Totally optionally, but just something for you to separate tasks that have the same name. New hires will never get to see the tags. The *content* is basically a WYSIWYG editor that allows you to add various things. Such as headers, lists, files and images. *Form options* is exactly the same as with the pre-boarding part. Just a form that your new hires would need to fill in and then it's sent back to you. At the very bottom, you have a quick check box (only available with Slack integration), which is currently checked. This means that the answers from the new hire will be sent back to the Slack channel that you specify there. It's best to make the new hire aware of this, so they don't add anything they wouldn't want to share with the rest of the team. This feature is perfect for when you want to let your new hire introduce to the team with a default format. 
+I think the **title** speaks for itself: it will be displayed to the new hire with that. The **Due on workday** field will allow you to add a workday on when the tasks needs to be be completed. New hire's will get a notification of that in Slack/Webportal. Remember: this is workdays, not calendar days. If Monday is day 1, then next week Monday is day 6!
+Then we have the **Tags** part. This is just a means of identification for yourself and other staff members. Totally optionally, but just something for you to separate tasks that have the same name. New hires will never get to see the tags. The **content** is basically a WYSIWYG editor that allows you to add various things. Such as headers, lists, files and images. **Form options** is exactly the same as with the pre-boarding part. Just a form that your new hires would need to fill in and then it's sent back to you. At the very bottom, you have a quick check box (only available with Slack integration), which is currently checked. This means that the answers from the new hire will be sent back to the Slack channel that you specify there. It's best to make the new hire aware of this, so they don't add anything they wouldn't want to share with the rest of the team. This feature is perfect for when you want to let your new hire introduce to the team with a default format. 
 
 
 ## Resource items
@@ -75,13 +75,19 @@ Your new hire is new to the company and they barely know anyone. Perhaps they kn
 
 On the right side, you have an example of how it looks like to your new hire (in the webportal). Please note that things like `{{ first_name }}` will be replaced with the new hire's first name. This goes for most fields in the software (including content and title items). You can use these placeholders:
 
+::: v-pre
 `{{ first_name }}`: new hire's first name
-`{{ last_name }}`: new hire's last name
-`{{ email }}`: new hire's email address
-`{{ position }}`: new hire's position
-`{{ buddy }}`: new hire's buddy's full name
-`{{ manager }}`: new hire's manager's full name
 
+`{{ last_name }}`: new hire's last name
+
+`{{ email }}`: new hire's email address
+
+`{{ position }}`: new hire's position
+
+`{{ buddy }}`: new hire's buddy's full name
+
+`{{ manager }}`: new hire's manager's full name
+:::
 
 ## Badge items
 Badges are a way to keep your new hire motivated. You can't really do much with a badge, it's just there to give your new hire that extra bit of positivity between going through all the boring tasks they need to complete.
@@ -90,12 +96,23 @@ Badges are a way to keep your new hire motivated. You can't really do much with 
 
 On the right side, you will see an example of how it looks for the new hire. This, again, is for the webportal, but can be used for Slack as well. 
 
-## 
+## Admin to do item
+Sometimes, you or any of your colleagues need to do something for you new hire as well. With these items, you can automatically create a to do item for someone. You can assign it to someone and you can also notify someone else of this. 
 
+![admin todo edit](/admin-todo-edit.png)
 
+They will get a notification of this through Slack or email.
 
+## Text/Slack/Email message
+I going over those all at once as they all have the same purpose: Sending a one-off message to someone. This 'someone' could be the new hire themselves, the manager or buddy assigned to the new hire or some random person that you can pick yourself. 
 
+Here is an example of an email message:
 
+![admin todo edit](/email-edit.png)
 
+In the top right corner, you have the option to send an email message/slack message to yourself - just to test it out and see if everything is exactly how you want it to be. Please note that you need to have connected your account to your Slack account to be able to do this.
 
+Here is how the bottom part of our sequence looks like now. Now, this is only a really small sequence and you can make those as large as you want. You could also stack them - adding multiple sequences to one new hire.
+
+![sequence end](/sequence-end.png)
 
