@@ -134,9 +134,9 @@ Administrators are people that have full control over the dashboard. They can cr
 Optionally, you can add people with limited access. They would have access to their new hire's (being the manager) and their admin to do items. That's it.
 
 ### Employees
-Employees are basically empty accounts. They don't do much by default. They will show up on the colleagues page, but that's basically it. 
+Employees are basically empty accounts. They don't do much by default. They will show up on the colleagues page, but that's basically it. You can import them from Slack or Google to quickly have them all listed here. 
 
-However, if you want, you can assign resources to these people and then they will be able to use the Slack bot and online webportal too look into these. Resources don't have to be just for new hires - they can be usefull for long time employees as well. The colleagues page will be accessible for them too then. 
+If you want, you can assign resources to these people and then they will be able to use the Slack bot and online webportal too look into these. Resources don't have to be just for new hires - they can be usefull for long time employees as well. The colleagues page will be accessible for them too then. 
 
 ### New hires
 You can create new hires in three different ways:
@@ -189,11 +189,6 @@ Optionally, you can also enable another setting that sends you a message to manu
 
 If you click on 'Yeah!', then you will get a popup where you can choose the sequences you want to assign to them.
 
-## New hire's web portal
-
-
-
-
 ## New hire's Slack bot
 You can customize the bot however you like. Use your own name for it and profile picture. Please ignore the names/images f 
 
@@ -226,7 +221,27 @@ As you can see there, they can pick any chapter they want.
 
 An introduction in Slack will look like this:
 
-![introduction](/introduction-slack.png)
+![introduction slack](/introduction-slack.png)
 
 
+## New hire's web portal
+Now, most people will use the Slack integration. The web portal is more of a fallback to when a specific team in the company isn't using Slack. You can use the Slack integration standalone, but you can also use the web portal standalone. Both have all features. It's not recommended to mix them up as the Slack bot might have to do items that might have been completed already in the web portal. But, ultimately, it's up to you to decide. 
 
+The to do area looks like this:
+
+![new hire portal todo](/new-hire-portal-todo.png)
+
+
+A specific resource could look like this:
+
+![new hire portal resource](/new-hire-portal-resource.png)
+
+Resource that are being used as courses can contain questions and that looks like this:
+
+![new hire portal questions](/new-hire-portal-questions.png)
+
+You are able to view the answers in your dashboard.
+
+There is a colleagues page that your new hires (and also colleagues that have been with you for longer) can visit to see everyone.
+
+![new hire portal colleagues](/new-hire-portal-colleagues.png)
