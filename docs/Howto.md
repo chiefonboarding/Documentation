@@ -2,7 +2,9 @@
 
 At ChiefOnboarding, we currently don't do demos with potential customers. Demos take a lot of time and are quite similar between potential customer. You all come with the same goal, right? Improving your onboarding process. 
 
-Underneath, you will basically find the transcript of a demo. You will get to see most of the features that our software provides and you can easily come back to it, if you want to look something up again. At the same time, we can keep working on features that you want. As always: if you have a question, feel free to send us an [email](mailto:hello@chiefonboarding.com) - we are fast at replying (often within an hour).
+Underneath, you will basically find the transcript of a demo. You will get to see most of the features that our software provides and you can easily come back to it, if you want to look something up again. At the same time, we can keep working on features that you want. 
+
+As always: if you have a question, feel free to send us an [email](mailto:hello@chiefonboarding.com) - we are fast at replying (often within an hour).
 
 
 ## Sequences
@@ -190,12 +192,12 @@ Optionally, you can also enable another setting that sends you a message to manu
 If you click on 'Yeah!', then you will get a popup where you can choose the sequences you want to assign to them.
 
 ## New hire's Slack bot
-You can customize the bot however you like. Use your own name for it and profile picture. Please ignore the names/images f 
+You can customize the bot however you like. Use your own name for it and profile picture, so please ignore the current name / profile picture of the bot in the pictures below.
 
 When a new person is added, the bot will send a message to the team letting them know someone is starting soon.
 ![introduction new hire](/introduction-new-hire.png)
 
-They will be able to leave a personalized message for the new hire. This will show up on their 
+They will be able to leave a personalized message for the new hire. This will show up on their pre-boarding pages as an extra page with all the messages from colleagues.
 
 ![new new hire](/slack-welcome-message.png)
 
