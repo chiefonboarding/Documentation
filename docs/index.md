@@ -1,14 +1,14 @@
 # Introduction
 
-In one sentence, ChiefOnboarding is an open-source remote-first employee onboarding platform that helps you smoothline the employee experience for both the new hire and you through Slack or the web portal. 
+In one sentence, ChiefOnboarding is an open-source remote-first employee onboarding platform that helps you streamline the employee experience for both the new hire and you through Slack or the web portal. 
 
-With ChiefOnboarding you can create generic employee timelines and apply them to specific new hires. You could create these timelines based on the department that they join or based on their job title - that's up to you! Timelines are designed in a way that it will reduce the overwhelming feeling that a new hire often gets on their first few days and increases overall quality due to consistency.
+With ChiefOnboarding you can create generic new hire timelines and apply them to specific new hires. Timelines are designed in a way that it will reduce the overwhelming feeling that a new hire often gets on their first few days and increases overall quality due to consistency.
 
 Let's start at the beginning. Your new hire just said: "Yeah! I want to work for you" and you both signed the contracts. Up next, you need to make sure that your new hire knows things like the dress code, when they should start and what to expect from their first few days. That's often called pre-boarding. 
 
 With our pre-boarding module, you can create several pages with information, pictures, files, lists and so on with everything that your new hire needs to know. You can even add custom forms that will allow you to get some information from your new hire before they start. How about asking them for their favorite snack and adding that to their goodie pack to surpise them?
 
-Oh... but someone needs to make that goodie pack, right? That's what we created our "tasks" module for. In the timeline you can add tasks that will be created for your colleagues. Those are automatically created and colleagues will be notified of them. Colleagues are able to leave comments and check them off. They can even collaborate with others on a shared task.
+Oh... but someone needs to make that goodie pack, right? That's why we created our "tasks" module. In the timeline you can add tasks that will be created for your colleagues. Those are automatically created and colleagues will be notified of them. Colleagues are able to leave comments and check them off. They can even collaborate with others on a shared task.
 
 In the meantime, our Slack bot will send your team a message letting them know that someone is starting very soon. Your colleagues will be able to leave a custom welcome message, which will show up in the new hire's preboarding pages. Talking about keeping it personal! 
 
