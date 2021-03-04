@@ -25,6 +25,7 @@ from organization.models import Organization
 from users.models import User
 Organization.objects.create(name="<organization name>")
 User.objects.create_admin("<first name>", "<last name>", "<email>", "<password>")
+# example: User.objects.create_admin("Stan", "Doe", "hello@chiefonboarding.com", "Somethingsupersecret")
 ```
 
 At last, we need to add a bit of default data into the database:
