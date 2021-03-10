@@ -1,6 +1,6 @@
 # How to / Demo
 
-At ChiefOnboarding, we currently don't do demos with potential customers. Demos take a lot of time and are quite similar between potential customer. You all come with the same goal, right? Improving your onboarding process. 
+At ChiefOnboarding, we currently don't do demos with potential customers. Demos take a lot of time and are quite similar between potential customers. You all come with the same goal, right? Improving your onboarding process. 
 
 Underneath, you will basically find the transcript of a demo. You will get to see most of the features that our software provides and you can easily come back to it, if you want to look something up again. At the same time, we can keep working on features that you want. 
 
@@ -8,7 +8,7 @@ As always: if you have a question, feel free to send us an [email](mailto:hello@
 
 
 ## Sequences
-At ChiefOnboarding, we base everything around sequences. Sequnces are basically timelines which will map out the new hire's onboarding path. It looks like this:
+At ChiefOnboarding, we base everything around sequences. Sequences are basically timelines which will map out the new hire's onboarding path. It looks like this:
 
 ![sequences](/sequence.png)
 
@@ -32,19 +32,19 @@ And you can preview it with the preview button, it will look like this:
 
 ![preboarding view](/preboarding-view.png)
 
-You might have noticed the litle part at the bottom that says "Form options". You can actually build a custom form where you can allow your new hire to send some information back to you. Perhaps you want to know what their favorite snack is. 
+You might have noticed the little part at the bottom that says "Form options". You can actually build a custom form where you can allow your new hire to send some information back to you. Perhaps you want to know what their favorite snack is. 
 
 ### The general blocks
 There are three types of general blocks that you can choose from. You can create a block that triggers before the new hire starts. You could use this to create tasks (we will get to this later) for colleagues for things they need to do or send some emails/slack/text messages. 
 
 The second type of general blocks are the ones that start after the new hire starts. These are marked in workdays, so it doesn't really matter if your new hire starts on a Monday or Thursday - ChiefOnboarding will skip the weekends and not bother the new hire on those days. Example: Monday is workday 1, next week Monday is then day 6. You can add a bunch more in these types of blocks (which we will get into in a bit). We will notify the new hire of any newly added things - you can disable this if you don't want that.
 
-All of the above blocks trigger at 8 AM in the new hire's timezone. Yes, ChiefOnboarding is totally remote friendly, we support multiple timezones and multiple languages. 
+All of the above blocks trigger at 8 AM in the new hire's timezone. Yes, ChiefOnboarding is totally remote friendly, we support multiple time zones and multiple languages. 
 
-The third type of general block is a special one. You can have things happen based on a to do item. We will get into to do items in a bit, but basically what this is means is that you can wait for your new hire to complete a to do item and then it will trigger to create a new to do item for the new hire or perhaps send a message to a colleague. The posibilities are endless.
+The third type of general block is a special one. You can have things happen based on a to do item. We will get into to do items in a bit, but basically what this means is that you can wait for your new hire to complete a to do item and then it will trigger to create a new to do item for the new hire or perhaps send a message to a colleague. The possibilities are endless.
 
 ### The unconditioned block
-You can only add one of these and you can add things in here that are automatically added to the new hire when you add the sequence to your new hire. You could add some random stuff in here that you new hire might need or that they need right from the start. Think of some policies and some default to do items.
+You can only add one of these and you can add things in here that are automatically added to the new hire when you add the sequence to your new hire. You could add some random stuff in here that your new hire might need or that they need right from the start. Think of some policies and some default to do items.
 
 
 ## Templates
@@ -59,7 +59,7 @@ Let's break it down a bit more.
 
 I think the **title** speaks for itself: it will be displayed to the new hire with that. 
 
-The **Due on workday** field will allow you to add a workday on when the tasks needs to be be completed. New hire's will get a notification of that in Slack/Webportal. Remember: this is workdays, not calendar days. If Monday is day 1, then next week Monday is day 6!
+The **Due on workday** field will allow you to add a workday on when the tasks needs to be completed. New hire's will get a notification of that in Slack/Webportal. Remember: this is workdays, not calendar days. If Monday is day 1, then next week Monday is day 6!
 
 Then we have the **Tags** part. This is just a means of identification for yourself and other staff members. Totally optionally, but just something for you to separate tasks that have the same name. New hires will never get to see the tags. 
 
@@ -73,17 +73,17 @@ Resource items are meant to inform your new hire. Think of general procedures, h
 
 ![resources edit](/resources-edit.png)
 
-We already covered the title, tags and content part - they are the same as with the todo/preboarding items. Something new here is the 'Chapters' part. The name already gives it away, you can create chapters in these resources. This comes in handy when you want to split information a bit more (in the event that headers aren't enough). By default, you can't really check if the new hire indeed read/understood what was in the chapter. To solve that, you could turn the resource into a course (see the switch 'This is a course'). If you enable that, your new hire you will have to go through the resource chapter by chapter. You could also add questions inbetween the chapters, so you can check their knowledge. You will be able to see the answer that they filled in on your side. The chapter with a questionmark icon before it are these test. They can only consist of multiple choice questions.
+We already covered the title, tags and content part - they are the same as with the todo/preboarding items. Something new here is the 'Chapters' part. The name already gives it away, you can create chapters in these resources. This comes in handy when you want to split information a bit more (in the event that headers aren't enough). By default, you can't really check if the new hire indeed read/understood what was in the chapter. To solve that, you could turn the resource into a course (see the switch 'This is a course'). If you enable that, your new hire will have to go through the resource chapter by chapter. You could also add questions in between the chapters, so you can check their knowledge. You will be able to see the answer that they filled in on your side. The chapter with a question mark icon before it are these test. They can only consist of multiple choice questions.
 You can also pick or create a category to separate the multiple resources for your new hire.
 
 ### Introduction items
-Your new hire is new to the company and they barely know anyone. Perhaps they know a few people through the interviews, but that's mostlikely it. Introduction items are items that introduce your colleagues to your new hire. They look like this for you:
+Your new hire is new to the company and they barely know anyone. Perhaps they know a few people through the interviews, but that's most likely it. Introduction items are items that introduce your colleagues to your new hire. They look like this for you:
 
 
 ![introduction edit](/intro-edit.png)
 
 ::: v-pre
-On the right side, you have an example of how it looks like to your new hire (in the webportal). Please note that things like `{{ first_name }}` will be replaced with the new hire's first name. This goes for most fields in the software (including content and title items). You can use these placeholders:
+On the right side, you have an example of how it looks for your new hire (in the webportal). Please note that things like `{{ first_name }}` will be replaced with the new hire's first name. This goes for most fields in the software (including content and title items). You can use these placeholders:
 
 
 `{{ first_name }}`: new hire's first name
@@ -107,14 +107,14 @@ Badges are a way to keep your new hire motivated. You can't really do much with 
 On the right side, you will see an example of how it looks for the new hire. This, again, is for the webportal, but can be used for Slack as well. 
 
 ### Admin to do items
-Sometimes, you or any of your colleagues need to do something for you new hire as well. With these items, you can automatically create a to do item for someone. You can assign it to someone and you can also notify someone else of this. 
+Sometimes, you or any of your colleagues need to do something for your new hire as well. With these items, you can automatically create a to do item for someone. You can assign it to someone and you can also notify someone else of this. 
 
 ![admin todo edit](/admin-todo-edit.png)
 
 They will get a notification of this through Slack or email.
 
 ### Text/Slack/Email messages
-I going over those all at once as they all have the same purpose: Sending a one-off message to someone. This 'someone' could be the new hire themselves, the manager or buddy assigned to the new hire or some random person that you can pick yourself. 
+I am going over those all at once as they all have the same purpose: Sending a one-off message to someone. This 'someone' could be the new hire themselves, the manager or buddy assigned to the new hire or some random person that you can pick yourself. 
 
 Here is an example of an email message:
 
@@ -138,7 +138,7 @@ Optionally, you can add people with limited access. They would have access to th
 ### Employees
 Employees are basically empty accounts. They don't do much by default. They will show up on the colleagues page, but that's basically it. You can import them from Slack or Google to quickly have them all listed here. 
 
-If you want, you can assign resources to these people and then they will be able to use the Slack bot and online webportal too look into these. Resources don't have to be just for new hires - they can be usefull for long time employees as well. The colleagues page will be accessible for them too then. 
+If you want, you can assign resources to these people and then they will be able to use the Slack bot and online webportal too look into these. Resources don't have to be just for new hires - they can be useful for long time employees as well. The colleagues page will be accessible for them too then. 
 
 ### New hires
 You can create new hires in three different ways:
@@ -175,9 +175,9 @@ Let's look at each form field:
 
 `New hire's manager`: This is the new hire's manager, you can use this field for sending messages in the sequence.
 
-`Assign one or more sequences to this new hire`: This is the part where you can assign your pre-made sequences to the new hire. If some items won't be triggered (because you created the new hire later than the first item in the sequence), then you will git a popup asking if you want to trigger those items immidiately. 
+`Assign one or more sequences to this new hire`: This is the part where you can assign your pre-made sequences to the new hire. If some items won't be triggered (because you created the new hire later than the first item in the sequence), then you will git a popup asking if you want to trigger those items immediately. 
 
-Once created, you can choose to send the new hire's preboarding email. This one is not send automatically, as you might want to make changes before you send it (this will be implemented as part of the sequences later on though).
+Once created, you can choose to send the new hire's preboarding email. This one is not sent automatically, as you might want to make changes before you send it (this will be implemented as part of the sequences later on though).
 
 #### Using the API
 Please go to the [API doc page](/API.html#api-documentation) for instructions on how to set this up.

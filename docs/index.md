@@ -6,7 +6,7 @@ With ChiefOnboarding you can create generic new hire timelines and apply them to
 
 Let's start at the beginning. Your new hire just said: "Yeah! I want to work for you" and you both signed the contracts. Up next, you need to make sure that your new hire knows things like the dress code, when they should start and what to expect from their first few days. That's often called pre-boarding. 
 
-With our pre-boarding module, you can create several pages with information, pictures, files, lists and so on with everything that your new hire needs to know. You can even add custom forms that will allow you to get some information from your new hire before they start. How about asking them for their favorite snack and adding that to their goodie pack to surpise them?
+With our pre-boarding module, you can create several pages with information, pictures, files, lists and so on with everything that your new hire needs to know. You can even add custom forms that will allow you to get some information from your new hire before they start. How about asking them for their favorite snack and adding that to their goodie pack to surprise them?
 
 Oh... but someone needs to make that goodie pack, right? That's why we created our "tasks" module. In the timeline you can add tasks that will be created for your colleagues. Those are automatically created and colleagues will be notified of them. Colleagues are able to leave comments and check them off. They can even collaborate with others on a shared task.
 
@@ -29,10 +29,10 @@ Those timelines are extremely flexible. We understand that every company is diff
 ## Privacy
 We care about your privacy. ChiefOnboarding does not contain any weird or creepy trackers and you can even host it on your own servers if you really want full control over it. You will probably find that some of the integrations require quite a lot of permissions from a third party. I want to emphasise here that ChiefOnboarding does not ping home, ever! We will never receive any information from your server.
 
-For companies that use our servers, we can collect error logs for them. This will ensure quick bugfixes and therefore also greater stability of the platform. This is always on an opt-in bases - it's disabled by default. 
+For companies that use our servers, we can collect error logs for them. This will ensure quick bug fixes and therefore also greater stability of the platform. This is always on an opt-in basis - it's disabled by default. 
 
 ## Support
-Currently (Sept-Dec 2020), we have an average response time to questions of 1 hour and an average response time of 2 hours for bug fixes (actually fixing the bug, not just acknowledging the bug report). While those aren't official SLAs, we do our best to keep those averages as low as they are. Email support is only part of our paid plans, users hosting their own copy will have to default back to Github issues (and it takes more time to get back to you - paying customers are always in the priority queue). With the hosted package, you get best of both worlds: the openness of open source software with the fast support of a premium software package.
+Currently (Sept-Dec 2020), we have an average response time to questions of 1 hour and an average response time of 2 hours for bug fixes (actually fixing the bug, not just acknowledging the bug report). While those aren't official SLAs, we do our best to keep those averages as low as they are. Email support is only part of our paid plans, users hosting their own copy will have to default back to Github issues (and it takes more time to get back to you - paying customers are always in the priority queue). With the hosted package, you get the best of both worlds: the openness of open source software with the fast support of a premium software package.
 
 
 Helpful links: 
