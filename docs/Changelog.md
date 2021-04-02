@@ -4,6 +4,7 @@
 Release date: 2021-04-02
 ### Automatically add new hires when they join Slack
 This is disabled by default, but if you want, you can automatically add new hires to ChiefOnboarding when they join Slack. There is an option to manually approve new hires before they get onboarded by the Slack bot. When you do that, you can also pick the sequences that you want to assign to this new hire.
+
 ![Slack approval message](/slack-approval-settings.png)
 
 ![Slack approval settings](/slack-notification-approval.png)
