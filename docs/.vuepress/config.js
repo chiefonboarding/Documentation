@@ -29,7 +29,8 @@ module.exports = {
         ]
       },
       { path: '/API', title: 'API' },
-      { path: '/Q&A', title: 'Q&A' }
+      { path: '/Q&A', title: 'Q&A' },
+      { path: '/Changelog', title: 'Changelog' }
     ]
   }
 }
