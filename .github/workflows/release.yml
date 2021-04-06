@@ -1,0 +1,21 @@
+name: deploy_docs
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Building
+        run: |
+          npm install -D vuepress
+          npm run docs:build
+      - name: Uploading files with rclone 
+        uses: wei/rclone@v1
+        env:
+          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+        with:
+          args: sync docs/.vuepress/dist storage:/sites/caddy/chief_docs/ 
