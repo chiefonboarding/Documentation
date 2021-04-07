@@ -1,0 +1,26 @@
+name: deploy_docs
+on:
+  push:
+    branches:
+      - master 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Building
+        run: |
+          npm install -D vuepress
+          npm run docs:build
+      - name: Brotli Compression
+        id: brotli
+        uses: charlesworth/compress-action@1.0.0
+        with:
+          target-directory: 'docs/.vuepress/dist'
+      - name: Uploading files with rclone 
+        uses: wei/rclone@v1
+        env:
+          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+        with:
+          args: sync docs/.vuepress/dist storage:/caddy/chief_docs/
