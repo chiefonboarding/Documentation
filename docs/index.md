@@ -32,7 +32,7 @@ We care about your privacy. ChiefOnboarding does not contain any weird or creepy
 For companies that use our servers, we can collect error logs for them. This will ensure quick bug fixes and therefore also greater stability of the platform. This is always on an opt-in basis - it's disabled by default. 
 
 ## Support
-Currently (Sept-Dec 2020), we have an average response time to questions of 1 hour and an average response time of 2 hours for bug fixes (actually fixing the bug, not just acknowledging the bug report). While those aren't official SLAs, we do our best to keep those averages as low as they are. Email support is only part of our paid plans, users hosting their own copy will have to default back to Github issues (and it takes more time to get back to you - paying customers are always in the priority queue). With the hosted package, you get the best of both worlds: the openness of open source software with the fast support of a premium software package.
+Currently (Sept 2020 - April 2021), we have an average response time to questions of 1 hour and an average response time of 2 hours for bug fixes (actually fixing the bug, not just acknowledging the bug report). While those aren't official SLAs, we do our best to keep those averages as low as they are. Email support is only part of our paid plans, users hosting their own copy will have to default back to Github issues (and it takes more time to get back to you - paying customers are always in the priority queue). With the hosted package, you get the best of both worlds: the openness of open source software with the fast support of a premium software package.
 
 
 Helpful links: 
