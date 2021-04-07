@@ -2,7 +2,7 @@ name: deploy_docs
 on:
   push:
     branches:
-      - build-deploy 
+      - master 
 jobs:
   build:
     runs-on: ubuntu-latest
