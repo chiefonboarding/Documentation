@@ -18,4 +18,4 @@ jobs:
         env:
           RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
         with:
-          args: sync docs/.vuepress/dist storage:/sites/caddy/chief_docs/ 
+          args: sync docs/.vuepress/dist storage:/caddy/chief_docs/ 
