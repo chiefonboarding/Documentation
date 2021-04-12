@@ -43,5 +43,5 @@ docker-compose run web python3 manage.py loaddata welcome_message.json
 This is entirely optional, but if you want, you can import some examples with fixtures. Just run this:
 
 ```
-docker-compose run web python3 manage.py loaddata content.json to_do.json preboarding.json external_messages.json sequence.json badge.json admin_task.json admin_task_comment.json category.json condition.json tag.json
+docker-compose run web python3 manage.py loaddata all.json 
 ```
