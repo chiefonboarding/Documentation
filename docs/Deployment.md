@@ -3,11 +3,11 @@ Currently, two ways of deploying are supported out of the box. Docker and Heroku
 
 ## Deploying
 
-1. [Deploy through Docker](#Deploy-through-Docker)
-1. [Deploy through Heroku](#Deploy-through-Heroku)
+1. [Deploy with Docker](#deploy-with-docker)
+1. [Deploy with Heroku](#deploy-with-heroku)
 
-### Deploy through Docker
-You can easily deploy ChiefOnboarding through Docker (Docker-compose). Make sure that both Docker and Docker-compose are installed and your server. Please note that some of the data below contain example values and should be replaced.
+### Deploy with Docker
+You can easily deploy ChiefOnboarding with Docker (Docker-compose). Make sure that both Docker and Docker-compose are installed and your server. Please note that some of the data below contain example values and should be replaced.
 
 1. Point your domain name to your IP address.
 2. Create a folder somewhere and then add this `docker-compose.yml` file:
@@ -102,11 +102,11 @@ test.chiefonboarding.com {
   reverse_proxy web:8000
 }
 ```
-5. You can now run docker compose: `docker-compose up`. When you go to your domain name, you should have a blank page with a loading icon in the middle. That's correct, we need to do a few more things before everything is working.
+5. You can now run docker compose: `docker-compose up`. When you go to your domain name, you should have a blank page with a loading icon in the middle. That's correct, we need to do a few more things before everything is working. See [last steps](#last-steps).
 
 
-### Deploy through Heroku
-Please note: you will need to have an account at Heroku for this to work. Hosting at Heroku is more expensive than hosting it through Docker on a VPS. We will set it up to use two Hobby Dynos (which will be $14/month. A database upgrade might be necessary later on.
+### Deploy with Heroku
+Please note: you will need to have an account at Heroku for this to work. Hosting at Heroku is more expensive than hosting it with Docker on a VPS. We will set it up to use two Hobby Dynos (which will be $14/month. A database upgrade might be necessary later on.
 
 You will have to login to Heroku or create an account there. Then, you will need to click this link to start the process: [https://heroku.com/deploy?template=https://github.com/chiefonboarding/ChiefOnboarding/tree/deploy](https://heroku.com/deploy?template=https://github.com/chiefonboarding/ChiefOnboarding/tree/deploy).
 Heroku will then ask you for some details. Please be careful to put them in correctly, otherwise your app will not start.
@@ -115,7 +115,7 @@ The `app name` can be anything you want (so long it is available).
 
 Under `config vars` you will have 5 items. Before you fill in anything: decide whether you want to use a Heroku subdomain `<app name>.herokuapp.com` or your own domain `onboarding.yourcompany.com`. Your own domain doesn't have to be a subdomain.
 
-`ALLOWED_HOST`: This needs to be the domain you want to use for the platform. Either your Heroku subdomain or your own subdomain. You can add multiple urls if you want to make it available through multiple urls (example: `domain.example.com, domain2.example.com`). Do **not** add the protocol (`https://`) before the url.
+`ALLOWED_HOST`: This needs to be the domain you want to use for the platform. Either your Heroku subdomain or your own subdomain. You can add multiple urls if you want to make it available with multiple urls (example: `domain.example.com, domain2.example.com`). Do **not** add the protocol (`https://`) before the url.
 
 `BASE_URL`: This is the url that will be used in multiple places, such as redirects and password reset emails. For this variable, you should add the protocol. Such as `https://onboarding.yourcompany.com` or `https://<app name>.herokuapp.com`. You can only add one url here.
 
@@ -143,7 +143,7 @@ You might get a red icon now next to your domain name. It might take a bit of ti
 
 Once that's done, you are ready to put in a bit of data and then you are done!
 
-## Creating the first account and adding default data
+## Last steps 
 First start a python/django shell session with this:
 
 Docker:
