@@ -36,7 +36,7 @@ services:
     container_name: web
     expose:
       - "8000"
-    command: bash -c "cd back && python manage.py collectstatic --no-input && python manage.py migrate && gunicorn back.wsgi -b 0.0.0.0:8000"
+    command: bash -c "python manage.py collectstatic --no-input && python manage.py migrate && gunicorn back.wsgi -b 0.0.0.0:8000"
     env_file:
       - .env
     depends_on:
@@ -67,7 +67,7 @@ services:
       - global
 
   celery:
-    command: celery --workdir=back -A back worker --beat -l info 
+    command: celery -A back worker --beat -l info 
     image: chiefonboarding/chiefonboarding:latest
     restart: unless-stopped
     env_file:
