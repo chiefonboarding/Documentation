@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.0
+Release date: 2021-04-13
+### Docker image
+There is now an official Docker image available. Details on how to use it can be found under 'Deployment'.
+
+### Heroku deployment
+You can now deploy ChiefOnboarding easily with Heroku. Details on how to do this can be found under 'Deployment'.
+
 ## v1.0.0
 Release date: 2021-04-02
 ### Automatically add new hires when they join Slack
