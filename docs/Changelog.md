@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.2.0
+Release date: 2021-05-15
+### TOTP 2FA support
+You can now use andOTP, Aegis authenticator, Google authenticator, Authy or any other OTP app that you use to set up 2FA (with QR code). 
+
+### New editor and video support
+TipTap (the editor that is being used) got updated. We now also support native video upload to S3. It will show up as a video in the portal and as a normal link in Slack.
+
+### SMTP support
+You can now also use SMTP for sending emails. SMTP should be your last resort, if all other providers fail.
+
+
 ## v1.1.0
 Release date: 2021-04-13
 ### Docker image
