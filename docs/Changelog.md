@@ -1,7 +1,7 @@
 # Changelog
 
 ## v1.2.0
-Release date: 2021-05-15
+Release date: 2021-06-08
 ### TOTP 2FA support
 You can now use andOTP, Aegis authenticator, Google authenticator, Authy or any other OTP app that you use to set up 2FA (with QR code). 
 
@@ -11,6 +11,8 @@ TipTap (the editor that is being used) got updated. We now also support native v
 ### SMTP support
 You can now also use SMTP for sending emails. SMTP should be your last resort, if all other providers fail.
 
+### Refactor Docker setup
+Redis has been removed and Celery has been migrated to Django Q. It now runs in the same container (with supervisor). So, now you only need two containers (Web + db) and perhaps Caddy as a reverse proxy.
 
 ## v1.1.0
 Release date: 2021-04-13

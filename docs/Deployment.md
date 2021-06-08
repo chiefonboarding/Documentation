@@ -17,8 +17,8 @@ version: '3'
 
 services:
   db:
-    restart: always
     image: postgres:latest
+    restart: always
     expose:
       - "5432"
     volumes:
@@ -33,12 +33,14 @@ services:
   web:
     image: chiefonboarding/chiefonboarding:latest
     restart: always
-    container_name: web
     expose:
       - "8000"
-    command: bash -c "python manage.py collectstatic --no-input && python manage.py migrate && gunicorn back.wsgi -b 0.0.0.0:8000"
-    env_file:
-      - .env
+    environment:
+      - SECRET_KEY=somethingsupersecret
+      - BASE_URL=https://test.chiefonboarding.com
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/chiefonboarding
+      - ALLOWED_HOST=test.chiefonboarding.com
+      - DEFAULT_FROM_EMAIL=hello@chiefonboarding.com
     depends_on:
       - db
     networks:
@@ -58,26 +60,6 @@ services:
     networks:
       - global
 
-  redis:
-    restart: unless-stopped 
-    image: redis:latest
-    expose:
-      - "6379"
-    networks:
-      - global
-
-  celery:
-    command: celery -A back worker --beat -l info 
-    image: chiefonboarding/chiefonboarding:latest
-    restart: unless-stopped
-    env_file:
-      - .env
-    depends_on:
-      - web
-      - redis
-    networks:
-      - global
-
 volumes:
   pgdata:
   caddy_data:
@@ -87,22 +69,15 @@ networks:
   global:
 
 ```
-3. And then create a `.env` file in the same folder with values similar to these:
-```
-SECRET_KEY=somethingsupersecret
-BASE_URL=https://test.chiefonboarding.com
-DATABASE_URL=postgres://postgres:postgres@db:5432/chiefonboarding
-REDIS_URL=redis://redis:6379
-ALLOWED_HOST=test.chiefonboarding.com
-DEFAULT_FROM_EMAIL=hello@chiefonboarding.com
-```
-4. Then we need to create a `Caddyfile` to route the requests to the server (change the domain name, obviously):
+A quick note: it will generate an account for you. Please check the logs for that (you can and should delete this account after you created a new admin account). If you want to specify your own login details, then specify a `ACCOUNT_EMAIL` and `ACCOUNT_PASSWORD` in the environment variables.
+
+3. Then we need to create a `Caddyfile` to route the requests to the server (change the domain name, obviously):
 ```
 test.chiefonboarding.com {
   reverse_proxy web:8000
 }
 ```
-5. You can now run docker compose: `docker-compose up`. When you go to your domain name, you should have a blank page with a loading icon in the middle. That's correct, we need to do a few more things before everything is working. See [last steps](#last-steps).
+5. You can now run docker compose: `docker-compose up`. When you go to your domain name, you should see a login form where you can fill in your username and password (either from the logs, or specified yourself). There will be some demo data in there already, feel free to delete everything. 
 
 
 ### Deploy with Heroku
@@ -141,47 +116,4 @@ You might get a red icon now next to your domain name. It might take a bit of ti
 
 ![heroku click recheck](/heroku-click-recheck.png)
 
-Once that's done, you are ready to put in a bit of data and then you are done!
-
-## Last steps 
-First start a python/django shell session with this:
-
-Docker:
-
-```
-docker-compose run web python3 manage.py shell
-```
-
-Heroku: click on the 'more' button (top right in your dashboard) and then click on 'console'. Fill in 'bash' then do this:
-
-```
-cd back
-python manage.py shell
-```
-
-Then run this (please replace the items that are marked with < and >):
-
-```
-from organization.models import Organization
-from users.models import User
-Organization.objects.create(name="<organization name>")
-User.objects.create_admin("<first name>", "<last name>", "<email>", "<password>")
-# example: User.objects.create_admin("Stan", "Doe", "hello@chiefonboarding.com", "Somethingsupersecret")
-```
-
-At last, we need to add some default data.
-
-Docker:
-
-```
-docker-compose run web python3 manage.py loaddata welcome_message.json
-```
-
-Heroku: click on the 'more' button (top right in your dashboard) and then click on 'console'. Fill in 'bash' then do this: 
-
-```
-python manage.py loaddata welcome_message.json
-```
-If you want to add a bunch of example data (recommended) then add `all.json` at the end of the previous line (so: `python manage.py loaddata welcome_message.json all.json`).
-
-That's it! Happy onboarding!
+That's all!
