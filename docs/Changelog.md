@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.2.3
+* Putting new hire start date further in the future (fixtures)
+* Fix for blocking collectstatic on restart of container
+* Enforcing email address of admin account to be lowercase. The email address would always be registered as lowercase and could therefore output incorrect info (on first run - creating admin account).
+* Updated Docker version
+
+## v1.2.2
+- Another docker build fix
+
+## v1.2.1
+- A docker build fix 
+
 ## v1.2.0
 Release date: 2021-06-08
 ### TOTP 2FA support

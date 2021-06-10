@@ -10,7 +10,7 @@ Currently, two ways of deploying are supported out of the box. Docker and Heroku
 You can easily deploy ChiefOnboarding with Docker (Docker-compose). Make sure that both Docker and Docker-compose are installed and your server. Please note that some of the data below contain example values and should be replaced.
 
 1. Point your domain name to your IP address.
-2. Create a folder somewhere and then add this `docker-compose.yml` file:
+2. Create a folder somewhere and then add this `docker-compose.yml` file (change the environment variables to something that works for you!):
 
 ```
 version: '3'
@@ -69,7 +69,7 @@ networks:
   global:
 
 ```
-A quick note: it will generate an account for you. Please check the logs for that (you can and should delete this account after you created a new admin account). If you want to specify your own login details, then specify a `ACCOUNT_EMAIL` and `ACCOUNT_PASSWORD` in the environment variables.
+A quick note: it will generate an account for you. Please check the logs for that (you can and should delete this account after you created a new admin account). If you want to specify your own login details, then specify a `ACCOUNT_EMAIL` (should always be lowercase email address) and `ACCOUNT_PASSWORD` in the environment variables.
 
 3. Then we need to create a `Caddyfile` to route the requests to the server (change the domain name, obviously):
 ```
