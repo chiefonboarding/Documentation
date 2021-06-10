@@ -71,6 +71,8 @@ networks:
 ```
 A quick note: it will generate an account for you. Please check the logs for that (you can and should delete this account after you created a new admin account). If you want to specify your own login details, then specify a `ACCOUNT_EMAIL` (should always be lowercase email address) and `ACCOUNT_PASSWORD` in the environment variables.
 
+If you don't want to have a secure connecting and want to connect over `http` (not secure, and you will have to change the Caddy file below), then add `HTTP_INSECURE=True` to your environment variables.
+
 3. Then we need to create a `Caddyfile` to route the requests to the server (change the domain name, obviously):
 ```
 test.chiefonboarding.com {
