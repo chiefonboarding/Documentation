@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.2.6
+* Show error message when trying to send Slack test message without Slack account attached
+* Fix showing preboarding preview part in a sequence
+* Fix Slack syncing issue
+* Update Django dep to newest version
+* Update Docker version number (routine task)
+* Fix showing old data in sequences (when adding a new one)
+
+## v1.2.5
+Fix docker copy command
+
+## v1.2.4
+Simplify docker setup (remove folders that are not necessary in container)
+
 ## v1.2.3
 * Putting new hire start date further in the future (fixtures)
 * Fix for blocking collectstatic on restart of container
