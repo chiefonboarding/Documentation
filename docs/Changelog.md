@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.2.7
+* Adding default username/password to dev docker-compose file
+* Adding migrate cache table to dev docker-compose file
+* Adding `node_modules` to gitignore
+* Updates for Django Q. Stop having it redo every failing task indefinitely.
+
 ## v1.2.6
 * Show error message when trying to send Slack test message without Slack account attached
 * Fix showing preboarding preview part in a sequence
