@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.2.8
+* Remove old signals file (old setup)
+* Fix not being able to add to do items through 'add sequence' button
+* Fix showing empty 'to do' conditions on new hire timeline
+
 ## v1.2.7
 * Adding default username/password to dev docker-compose file
 * Adding migrate cache table to dev docker-compose file
