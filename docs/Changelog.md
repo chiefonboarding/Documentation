@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.2.9
+* Fix bug with adding introduction/appointment items
+
 ## v1.2.8
 * Remove old signals file (old setup)
 * Fix not being able to add to do items through 'add sequence' button
