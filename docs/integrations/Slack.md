@@ -12,7 +12,7 @@ There are two ways of create the Slack bot. Either do it automatically with the 
 
 Use the manifest (recommended):
 
-1. Go to [https://api.slack.com/apps](https://api.slack.com/apps) and click on 'Create New App' (big green button, can't be missed). Click on "From an app manifext".
+1. Go to [https://api.slack.com/apps](https://api.slack.com/apps) and click on 'Create New App' (big green button, can't be missed). Click on "From an app manifest".
 2. Select the workspace where you want to install ChiefOnboarding.
 3. Copy and paste the manifest below in the little text box that you get to see (change `XXXXXXXXXXXXXXX` with your domain name. Example: `demo.chiefonboarding.com`):
 
@@ -53,7 +53,7 @@ settings:
 
 4. Review the permissions and then click on 'Create'.
 5. Scroll a bit on the new page and notice the `App credentials` part. You need the information there to fill in on the settings/integrations page in your ChiefOnboarding instance.
-6. Fill in the details accordingly. The only thing you can't fill in is the 'Redirect URL'. This URL depends on your instances domain name. You will need to fill this in there: `https://YOURDOMAIN/api/integrations/slack`.
+6. Fill in the details accordingly. The only thing you can't fill in is the 'Redirect URL'. This URL depends on your instances domain name. You will need to fill this in there: `https://YOURDOMAIN/api/integrations/slack` (again, change this url to match with your domain name!)
 8. Submit the form. You will get back a Slack button. Click it and verify that you want to install your bot in your Slack team. (Try to say 'hello' to it)
 
 
