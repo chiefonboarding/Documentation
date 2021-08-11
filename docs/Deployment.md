@@ -39,7 +39,7 @@ services:
       - SECRET_KEY=somethingsupersecret
       - BASE_URL=https://test.chiefonboarding.com
       - DATABASE_URL=postgres://postgres:postgres@db:5432/chiefonboarding
-      - ALLOWED_HOST=test.chiefonboarding.com
+      - ALLOWED_HOSTS=test.chiefonboarding.com
       - DEFAULT_FROM_EMAIL=hello@chiefonboarding.com
     depends_on:
       - db
@@ -70,6 +70,7 @@ networks:
 
 ```
 A quick note: it will generate an account for you. Please check the logs for that (you can and should delete this account after you created a new admin account). If you want to specify your own login details, then specify a `ACCOUNT_EMAIL` (should always be lowercase email address) and `ACCOUNT_PASSWORD` in the environment variables.
+Second note: if you need to do a healthcheck for your container, then you can use the url `/health` for that. This url is available under any IP/domain name. It will respond with a 200 status and an `ok` as content. The `ALLOWED_HOSTS` variable is ignored for that url.
 
 If you don't want to have a secure connecting and want to connect over `http` (not secure, and you will have to change the Caddy file below), then add `HTTP_INSECURE=True` to your environment variables.
 
@@ -102,7 +103,7 @@ Under "config vars" you will have 7 items. Before you fill in anything: decide w
 
 **BASE_URL**: This is the url that will be used in multiple places, such as redirects and password reset emails. For this variable, you should add the protocol. Such as `https://onboarding.yourcompany.com` or `https://<app name>.herokuapp.com`. You can only add one url here.
 
-**ALLOWED_HOST**: This needs to be the domain you want to use for the platform. Either your Heroku subdomain or your own subdomain. You can add multiple urls if you want to make it available with multiple urls (example: `domain.example.com, domain2.example.com`). Do **not** add the protocol (`https://`) before the url.
+**ALLOWED_HOSTS**: This needs to be the domain you want to use for the platform. Either your Heroku subdomain or your own subdomain. You can add multiple urls if you want to make it available with multiple urls (example: `domain.example.com,domain2.example.com`). Do **not** add the protocol (`https://`) before the url.
 
 **DEFAULT_FROM_EMAIL**: This is used for sending emails (you will need to [set up emails](https://docs.chiefonboarding.com/integrations/Email.html) if you want this to work). You can put it like this: `Company Onboarding <hello@yourcompany.com>` or `hello@yourcompany.com`.
 
