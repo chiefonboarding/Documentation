@@ -1,4 +1,8 @@
-# Developing on ChiefOnboarding
+---
+order: 70
+---
+
+# Development
 
 If you want to contribute or just play around with the source code, the first step would be to download the source code. Then run this to get it all up and running: 
 

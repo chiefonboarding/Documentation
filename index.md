@@ -1,3 +1,7 @@
+---
+order: 100
+---
+
 # Introduction
 
 In one sentence, ChiefOnboarding is an open-source remote-first employee onboarding platform that helps you streamline the employee experience for both the new hire and you through Slack or the web portal. 

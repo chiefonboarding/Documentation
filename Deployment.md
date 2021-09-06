@@ -1,7 +1,9 @@
-# Deploy ChiefOnboarding 
-Currently, two ways of deploying are supported out of the box. Docker and Heroku.
+---
+order: 80
+---
 
-## Deploying
+# Deployment
+Currently, two ways of deploying are supported out of the box. Docker and Heroku.
 
 1. [Deploy with Docker](#deploy-with-docker)
 1. [Deploy with Heroku](#deploy-with-heroku)
@@ -109,18 +111,18 @@ Under "config vars" you will have 7 items. Before you fill in anything: decide w
 
 Click on `Deploy app`. You should see this when it's done (this might take a few minutes):
 
-![heroku deploy done](/heroku-deploy-done.png)
+![heroku deploy done](static/heroku-deploy-done.png)
 
 If you are using a custom domain: go to the settings area and look for the 'domains' part:
 
-![heroku settings domain](/heroku-settings-domain.png)
+![heroku settings domain](static/heroku-settings-domain.png)
 
 Then click on 'Add domain' and enter your domain name. You will get a DNS target to point your domain name to in your DNS settings:
 
-![heroku new domain](/heroku-new-domain.png)
+![heroku new domain](static/heroku-new-domain.png)
 
 You might get a red icon now next to your domain name. It might take a bit of time to get your domain validated (DNS is often cached). Just wait for a bit and try to refresh it until it becomes green:
 
-![heroku click recheck](/heroku-click-recheck.png)
+![heroku click recheck](static/heroku-click-recheck.png)
 
 That's all!
