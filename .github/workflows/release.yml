@@ -13,11 +13,6 @@ jobs:
         run: |
           npm install retypeapp --global
           retype build
-      - name: Brotli Compression
-        id: brotli
-        uses: charlesworth/compress-action@1.0.0
-        with:
-          target-directory: '.retype'
       - name: Uploading files with rclone 
         uses: wei/rclone@v1
         env:
