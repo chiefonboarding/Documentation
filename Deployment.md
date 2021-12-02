@@ -102,11 +102,11 @@ You will then need to fill in the following details:
 
 Click on deploy and let it run. This will take about 10 minutes before it's ready. 
 
-*If you DO have a domain name*:
+**If you DO have a domain name**:
 
 Go to the `chiefonboarding` service and go to `settings`. Scroll down until you see the `Custom domain` setting. Add your domain there and configure your DNS to link to it.
 
-*If you DO NOT have a domain name*:
+**If you DO NOT have a domain name**:
 
 Go to environment variables and swap the `ALLOWED_HOSTS` and `BASE_URL` with the url that has been given to you by Render.
 
