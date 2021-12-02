@@ -6,7 +6,8 @@ order: 80
 Currently, two ways of deploying are supported out of the box. Docker and Heroku.
 
 1. [Deploy with Docker](#deploy-with-docker)
-1. [Deploy with Heroku](#deploy-with-heroku)
+2. [Deploy with Render](#deploy-with-render)
+3. [Deploy with Heroku](#deploy-with-heroku)
 
 ### Deploy with Docker
 You can easily deploy ChiefOnboarding with Docker (Docker-compose). Make sure that both Docker and Docker-compose are installed and your server. Please note that some of the data below contain example values and should be replaced.
@@ -84,6 +85,32 @@ test.chiefonboarding.com {
 ```
 5. You can now run docker compose: `docker-compose up`. When you go to your domain name, you should see a login form where you can fill in your username and password (either from the logs, or specified yourself). There will be some demo data in there already, feel free to delete everything. 
 
+### Deploy with Render
+You will have to login to Render or create an account there. Then, you will need to click this link to start the process: [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/chiefonboarding/chiefonboarding/tree/deploy) 
+
+You will then need to fill in the following details:
+
+**ACCOUNT_EMAIL**: This is the email address from the first admin account. Don't worry, you can add more accounts later and delete this one.
+
+**ACCOUNT_PASSWORD**: Fill in your prefered password. Anything works, but please make it long.
+
+**BASE_URL**: This is the url that will be used in multiple places, such as redirects and password reset emails. For this variable, you should add the protocol. Such as `https://onboarding.yourcompany.com`. If you don't have a url, use `https://test.chiefonboarding.com` and change it later to your `xxxx.onrender.com` link.
+
+**ALLOWED_HOSTS**: This needs to be the domain you want to use for the platform. Either your Render subdomain or your own subdomain. You can add multiple urls if you want to make it available with multiple urls (example: `domain.example.com,domain2.example.com`). Do **not** add the protocol (`https://`) before the url. If you don't have a url, use `test.chiefonboarding.com` and change it later to your `xxxx.onrender.com` link.
+
+**DEFAULT_FROM_EMAIL**: This is used for sending emails (you will need to [set up emails](https://docs.chiefonboarding.com/integrations/Email.html) if you want this to work). You can put it like this: `Company Onboarding <hello@yourcompany.com>` or `hello@yourcompany.com`.
+
+Click on deploy and let it run. This will take about 10 minutes before it's ready. 
+
+*If you DO have a domain name*:
+
+Go to the `chiefonboarding` service and go to `settings`. Scroll down until you see the `Custom domain` setting. Add your domain there and configure your DNS to link to it.
+
+*If you DO NOT have a domain name*:
+
+Go to environment variables and swap the `ALLOWED_HOSTS` and `BASE_URL` with the url that has been given to you by Render.
+
+That's all!
 
 ### Deploy with Heroku
 Please note: you will need to have an account at Heroku for this to work. Hosting at Heroku is more expensive than hosting it with Docker on a VPS. We will set it up to use two Hobby Dynos (which will be $14/month). A database upgrade might be necessary later on.
@@ -126,3 +153,4 @@ You might get a red icon now next to your domain name. It might take a bit of ti
 ![heroku click recheck](static/heroku-click-recheck.png)
 
 That's all!
+
