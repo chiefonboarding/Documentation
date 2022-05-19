@@ -168,5 +168,5 @@ Please make a backup of your database before doing this.
 2. Download the ChiefOnboarding git repo: `git clone https://github.com/chiefonboarding/ChiefOnboarding.git`
 3. Move to the `deploy` repo: `git checkout deploy`
 4. Add your heroku git url as a git remote. You can find this url on the app's settings page -> app info -> Heroku git URL. `git remote add heroku_repo repo_url` (replace `repo_url` with your own url).
-5. Then push it up (we need to force it): `git push -f heroku_repo deploy:main`
+5. Then push it up (we need to force it): `git push -f heroku_repo deploy:master`
 
