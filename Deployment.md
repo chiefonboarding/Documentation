@@ -85,6 +85,13 @@ test.chiefonboarding.com {
 ```
 5. You can now run docker compose: `docker-compose up`. When you go to your domain name, you should see a login form where you can fill in your username and password (either from the logs, or specified yourself). There will be some demo data in there already, feel free to delete everything. 
 
+## Updating docker image
+Please make a backup of your database before doing this.  
+
+1. First stop all containers: `docker-compose down`
+2. Pull the new image: `docker-compose pull`
+3. Start the containers: `docker-compose up -d`
+
 ### Deploy with Render
 You will have to login to Render or create an account there. Then, you will need to click this link to start the process: [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/chiefonboarding/chiefonboarding/tree/deploy) 
 
@@ -153,4 +160,13 @@ You might get a red icon now next to your domain name. It might take a bit of ti
 ![heroku click recheck](static/heroku-click-recheck.png)
 
 That's all!
+
+## Update Heroku 
+Please make a backup of your database before doing this.
+
+1. Install the Heroku CLI and authenticate yourself.
+2. Download the ChiefOnboarding git repo: `git clone https://github.com/chiefonboarding/ChiefOnboarding.git`
+3. Move to the `deploy` repo: `git checkout deploy`
+4. Add your heroku git url as a git remote. You can find this url on the app's settings page -> app info -> Heroku git URL. `git remote add heroku_repo repo_url` (replace `repo_url` with your own url).
+5. Then push it up (we need to force it): `git push -f heroku_repo deploy:main`
 
